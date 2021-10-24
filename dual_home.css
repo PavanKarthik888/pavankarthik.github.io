@@ -1,0 +1,46 @@
+.rights, .lefts {
+
+	height:  50vh;
+	width: 100%;
+}
+@media screen and (min-width: 768px){
+
+	.lefts, .rights {
+		height: 100vh;
+	}
+}
+.lefts {
+	background-image: url("dark_tile.jpg");
+	background-size: cover;
+
+
+}
+#textbut{
+	background: none;
+	border: none;
+}
+.rights{
+
+	background-image: url("white.png");
+	background-size: cover;
+
+}
+
+.name{
+	font-family: "Brush Script MT",cursive;
+	font-size: 78px;
+	text-align: top;
+}
+a:hover, a:visited, a:link, a:active{
+	text-decoration: none;
+}
+.foot_black{
+	position: fixed;
+	bottom: 0;
+	margin-left: 37%;
+}
+.foot_white{
+	position: fixed;
+	bottom: 0;
+	margin-right: 36%;
+}
