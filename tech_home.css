@@ -1,0 +1,58 @@
+nav{
+	width: 100%;
+	display: flex;
+	overflow: auto;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0 0 0 500px;
+	list-style: none;
+	text-align: center;
+	font-size: 30px;
+}
+nav ul li{
+	float: left;
+
+}
+
+.navbar{
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.logo{
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin-top: 1px;
+	margin-right: 5px;
+}
+
+nav a{
+	text-decoration: none;
+	width: 100px;
+	padding: 20px 15px;
+	color: #ffffff;
+	text-align: center;
+
+}
+nav a:hover{
+	color: #ffffff;
+	transition: 0.1s;
+	text-transform: uppercase;
+}
+.awesome{
+	position: fixed;
+	right: 18px;
+	top: 35%;
+}
+
