@@ -1,58 +1,131 @@
-nav{
-	width: 100%;
-	display: flex;
-	overflow: auto;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-nav ul{
-	padding: 0;
-	margin: 0 0 0 500px;
-	list-style: none;
+.navbar {
+	position: relative;
+	width:  100%;
+	margin: 10px;
+    margin-left: 80px;
+	padding: 5px;
 	text-align: center;
-	font-size: 30px;
+	
 }
-nav ul li{
+.navbar ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.navbar li {
+	display: inline;
+	padding-right: 222px;
 	float: left;
-
 }
 
-.navbar{
-	display: inline-block;
-	vertical-align: top;
-	width: 300px;
-	height: 300px;
-	position: relative;
-	margin-top: 1px;
-	margin-right: 5px;
-}
-.logo{
-	display: inline-block;
-	vertical-align: top;
-	width: 300px;
-	height: 300px;
-	position: relative;
-	margin-top: 1px;
-	margin-right: 5px;
-}
-
-nav a{
+.navbar a{
+	font-size: 26px;
 	text-decoration: none;
 	width: 100px;
-	padding: 20px 15px;
+	padding: 5px 5px;
 	color: #ffffff;
 	text-align: center;
-
 }
-nav a:hover{
+.navbar a:hover{
 	color: #ffffff;
 	transition: 0.1s;
 	text-transform: uppercase;
 }
 .awesome{
-	position: fixed;
-	right: 18px;
-	top: 35%;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	bottom: 0;
+}
+.fa-bg{
+    background: #ffffff;
+}
+.fa-bg:hover{
+    border-radius: 50%;
+}
+.parallax {
+  background-image: url("dark_tile.jpg");
+  min-height: 300px;
+  background-attachment: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.title {
+    display: flex;
+    position: fixed;
+    float: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 1em;
+    width: 100%;
+}
+
+.title h1 {
+    animation: text-shadow 1.5s 2 ease-in-out;
+    font-size: 2.5em;
+    font-weight: 600;
+    
+}
+
+.title h1:hover {
+    animation-play-state: paused;
+}
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #ffffff, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #ffffff, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #ffffff, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #ffffff, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #ffffff, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+.rotate-center{
+    -webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both
+}
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+.awesome i {
+	padding-right: 26px;
 }
 
