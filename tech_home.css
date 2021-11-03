@@ -31,6 +31,8 @@
 	transition: 0.1s;
 	text-transform: uppercase;
 }
+
+/* Font awesome editing*/
 .awesome{
 	display: inline-block;
 	width: 100%;
@@ -38,6 +40,11 @@
 	text-align: center;
 	bottom: 0;
 }
+.awesome i {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
 .fa-bg{
     background: #ffffff;
 }
@@ -45,7 +52,7 @@
     border-radius: 50%;
 }
 .parallax {
-  background-image: url("dark_tile.jpg");
+  background: black;
   min-height: 300px;
   background-attachment: relative;
   background-position: center;
@@ -56,7 +63,7 @@
 
 .title {
     display: flex;
-    position: fixed;
+    position: relative;
     float: center;
     justify-content: center;
     min-height: 70vh;
@@ -120,12 +127,12 @@
             0 0 0 #fefc4b;
     }
 }
+
+/*Unused as of now*/
 .rotate-center{
     -webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both
 }
 @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }
-.awesome i {
-	padding-right: 26px;
-}
+
 
