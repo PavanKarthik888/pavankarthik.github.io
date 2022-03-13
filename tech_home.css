@@ -1,0 +1,51 @@
+.navbar {
+  padding: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: #ffffff;
+  transition: 0.1s;
+  text-transform: uppercase;
+}
+/*About editing*/
+.about_text {
+  text-align: center;
+}
+
+/*Skills Icons*/
+
+.skills i {
+  font-size: 70px;
+  color: #ffffff;
+  animation: skillrotate 5s infinite;
+  padding: 15px;
+}
+
+@keyframes skillrotate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Font awesome icons styling*/
+.awesome_icons {
+  position: absolute;
+  bottom: 20px;
+}
+
+.awesome_icons i {
+  padding: 5px;
+}
+
+.fa-bg {
+  background: #ffffff;
+}
+.fa-bg:hover {
+  border-radius: 50%;
+}
